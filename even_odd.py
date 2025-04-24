@@ -1,19 +1,6 @@
-score = int(input('Enter your score: '))
+number = int(input("Please enter a number: "))
 
-if 90 <= score <= 100:
-    print('You got an A!')
-
-elif 80 <= score <= 89:
-    print('You got a B!')
-
-elif 70 <= score <= 79:
-    print('You got a C!')
-
-elif 60 <= score <= 69:
-    print('You got a D!')
-
-elif score < 60:
-    print('You got a F!')
-
+if number % 2 == 0:
+    print("The number is even.")
 else:
-    print('Please enter the correct number.')
+    print("The number is odd.")
