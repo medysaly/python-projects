@@ -7,4 +7,4 @@ aws_regions = [
     "ap-southeast-1"
 ]
 
-print(aws_regions[0])
+print(aws_regions)
