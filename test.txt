@@ -1,0 +1,2 @@
+Hello! This is my first AWS project.
+I'm learning boto3!
