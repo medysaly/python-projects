@@ -2,15 +2,13 @@ import boto3
 
 s3 = boto3.client('s3')
 
-bucket_name = 'mehdi-portfolio-website'
+bucket_name = 'mehdi-cloud-2'
 
-response = s3.list_objects_v2(Bucket = bucket_name )
+response = s3.list_objects_v2(Bucket=bucket_name)
 
-
-
-print(f'Files in bucket: {bucket_name}')
-print('-' * 40)
-
+print (f'Objects in S3 bucket: {bucket_name}')
+print ('-----------------------------------')
 
 for obj in response['Contents']:
-    print(f"  - {obj['Key']}")
+    print(f" - {obj['Key']} ({obj['Size']} bytes)")
+                  
